@@ -1,1 +1,52 @@
 /*  your css code here. If applicable */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.grid-container{
+	display:grid;
+	grid-template-coloumns:repeat(4,1fr);
+	gap:8px;
+	background:white;
+	padding:8px;
+}
+.item{
+	background:green;
+	color:white;
+	font-size:35px;
+	padding:25px;
+	font-family:Arial,sans-serif;
+}
+.item1{
+	grid-column:1/5;
+	
+}
+.item2{
+	grid-row:2/6;
+	grid-column:1/2;
+}
+.item3{
+	grid-column:2/3;
+}
+.item4{
+	grid-column:3/5;
+}
+.item5{
+	grid-column:2/4;
+}
+.item6{
+	grid-column:4/5;
+}
+.item7{
+	grid-column:2/3;
+}
+.item8{
+	grid-column:3/4;
+}
+.item9{
+	grid-column:4/5;
+}
+.item10{
+	grid-column:1/5;
+}

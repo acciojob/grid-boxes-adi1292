@@ -1,6 +1,6 @@
 /*  your css code here. If applicable */
 
-/* MUST match Cypress */
+
 #grid {
     display: grid;
     grid-template-rows: 124px 124px 124px 124px 124px;
@@ -8,7 +8,7 @@
     grid-gap: 10px 10px;
 }
 
-/* Styling only for visual layout */
+
 #grid > div {
     background: green;
     color: white;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-/* VISUAL POSITIONING to match your required image */
+
 #grid > div:nth-child(1) {
     grid-column: span 4;
 }

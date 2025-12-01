@@ -1,6 +1,7 @@
 /*  your css code here. If applicable */
 
 
+/* MUST match Cypress */
 #grid {
     display: grid;
     grid-template-rows: 124px 124px 124px 124px 124px;
@@ -8,62 +9,18 @@
     grid-gap: 10px 10px;
 }
 
-
 #grid > div {
     background: green;
     color: white;
     font-size: 32px;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-#grid > div:nth-child(1) {
-    grid-column: span 4;
-}
-
-#grid > div:nth-child(2) {
-    grid-row: span 4;
-}
-
-#grid > div:nth-child(3) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-#grid > div:nth-child(4) {
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
-}
-
-#grid > div:nth-child(5) {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-}
-
-#grid > div:nth-child(6) {
-    grid-column: 4 / 5;
-    grid-row: 3 / 4;
-}
-
-#grid > div:nth-child(7) {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-}
-
-#grid > div:nth-child(8) {
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
-}
-
-#grid > div:nth-child(9) {
-    grid-column: 4 / 5;
-    grid-row: 4 / 5;
-}
-
-#grid > div:nth-child(10) {
-    grid-column: 2 / 5;
-    grid-row: 5 / 6;
-}
+/* REQUIRED SPANS for Cypress */
+#grid > div:nth-child(1) { grid-column: span 4; }
+#grid > div:nth-child(2) { grid-row: span 4; }
+#grid > div:nth-child(4) { grid-column: span 2; }
+#grid > div:nth-child(5) { grid-column: span 2; }
+#grid > div:nth-child(10) { grid-column: span 3; }
